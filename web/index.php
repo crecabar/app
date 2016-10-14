@@ -29,7 +29,7 @@
  */
 
 //Get the current configuration manager
-require __DIR__ . '../config/ConfigManager.php';
+require(dirname(__FILE__)."/../config/ConfigManager.php");
 
 use \Config\ConfigManager;
 
