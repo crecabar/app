@@ -29,7 +29,7 @@
  */
 /**
  * Class Psr4AutoLoaderClass
- * @package Config
+ * @package  MEN\Config
  * @author crecabarren
  */
 

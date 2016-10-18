@@ -1,0 +1,24 @@
+; Main configuration file. It contains all relevant constants that are used on the application
+;
+
+; Database section
+[db]
+host=localhost
+user=root
+pass=
+db=qauac
+
+; Default application and controller
+[conf]
+default_app=frontend
+default_controller=home
+
+; Base namespace
+[namespaces]
+basename=MEN
+
+; Classes directory
+[dirs]
+root_dir=..
+app_dir=app
+lib_dir=lib

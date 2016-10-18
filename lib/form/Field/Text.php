@@ -14,7 +14,17 @@
 
 namespace MEN\Lib\Form\Field;
 
-class Text
+use MEN\Lib\Form\Field;
+
+class Text extends Field
 {
+    /**
+     * @return string
+     */
+    public function display()
+    {
+        // TODO: Implement display() method.
+        return '<input type="text" />';
+    }
 
 }

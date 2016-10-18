@@ -22,6 +22,8 @@
  */
 
 /**
+ * Entry point of the application, it loads the required configuration and the requested controller.
+ *
  * @file   index.php
  * @author crecabarren
  * @date   14-10-2016
@@ -35,3 +37,7 @@ use MEN\Config\ConfigManager;
 
 // Get the current config manager
 $CM = ConfigManager::getInstance();
+
+//Load one controller and display its action
+$home = new \MEN\App\Frontend\Modules\Home\Controllers\Home();
+$home->actionHome();

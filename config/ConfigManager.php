@@ -28,8 +28,11 @@
  * @time   11:45
  */
 /**
+ * Creates the basic configuration for all the application, creates the autoloader instance and register the available
+ * namespaces.
+ *
  * Class ConfigManager
- * @package ConfigManager
+ * @package  MEN\ConfigManager
  * @author crecabarren
  */
 
@@ -51,9 +54,8 @@ class ConfigManager
         require_once 'Psr4AutoLoaderClass.php';
         $this->loader = new Psr4AutoLoaderClass();
         $this->loader->register();
-        $this->loader->addNamespace('Lib', __DIR__ . '/../lib'); //TODO: this should be loaded here or in another place?
-        $this->loader->addNamespace('App', __DIR__ . '/../app');
         $this->parseIni();
+        $this->setNamespaces();
     }
 
     /**
@@ -69,13 +71,14 @@ class ConfigManager
     }
 
     /**
-     * @param string $namespace
-     * @param string $path
      * @return void
      */
-    public function addNamespace($namespace, $path)
+    public function setNamespaces()
     {
-        $this->loader->addNamespace($namespace, $path);
+        //TODO: try to parametrize this
+        $this->loader->addNamespace('MEN', __DIR__ . '/..');
+        $this->loader->addNamespace('MEN\Lib', __DIR__ . '/../lib');
+        $this->loader->addNamespace('MEN\App', __DIR__ . '/../app');
     }
 
     /**
@@ -83,7 +86,7 @@ class ConfigManager
      */
     private function parseIni()
     {
-        foreach (parse_ini_file('config.ini') as $key => $value) {
+        foreach (parse_ini_file('config.ini', true) as $key => $value) {
             $this->$key = $value;
         }
     }

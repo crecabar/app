@@ -7,14 +7,23 @@
  */
 /**
  * Class Select
- * @package MEN\lib\form\Field
+ * @package MEN\Lib\Form\Field
  * @author crecabarren
  */
 
 
 namespace MEN\Lib\Form\Field;
 
-class Select
+use MEN\Lib\Form\Field;
+
+class Select extends Field
 {
+    /**
+     * @return string
+     */
+    public function display()
+    {
+        // TODO: Implement display() method.
+    }
 
 }

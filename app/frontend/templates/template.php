@@ -28,22 +28,10 @@
  -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <?php $this->load->view('/components/head') ?>
-</head>
+    <head></head>
 <body>
-<?php $this->load->view('/components/ga') ?>
-<?php $this->load->view('/components/header') ?>
 <div class="container" role="main">
-    <?php $this->load->view('/components/messages') ?>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="tarjeta" >
-                <?php $this->load->view($content) ?>
-            </div>
-        </div>
-    </div>
-    <?php $this->load->view('/components/footer') ?>
+    <?= $content ?>
 </div>
 </body>
 </html>

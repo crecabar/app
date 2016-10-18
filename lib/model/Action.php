@@ -29,7 +29,7 @@
  */
 /**
  * Class Action
- * @package Model
+ * @package  MEN\Lib\Model
  * @author crecabarren
  */
 

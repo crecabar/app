@@ -12,9 +12,15 @@
  */
 
 
-namespace MEN\App\Frontend\Modules\Home;
+namespace MEN\App\Frontend\Modules\Home\Controllers;
+
+use MEN\Lib\Form\Field\Text;
 
 class Home
 {
-
+    public function actionHome()
+    {
+        $text = new Text();
+        echo "Hello world!<br/>".$text->display();
+    }
 }

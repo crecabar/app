@@ -28,7 +28,7 @@
  * @time   11:12
  */
 /**
- * Class Field
+ * Class MEN\Lib\Form\Field
  * @package Model
  * @author crecabarren
  */
@@ -36,7 +36,10 @@
 
 namespace MEN\Lib\Form;
 
-class Field extends Table
+abstract class Field
 {
-
+    /**
+     * @return string
+     */
+    public abstract function display();
 }

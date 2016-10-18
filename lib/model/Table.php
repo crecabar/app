@@ -29,7 +29,7 @@
  */
 /**
  * Class Table
- * @package Model
+ * @package MEN\Lib\Model
  * @author crecabarren
  */
 
@@ -42,4 +42,21 @@ abstract class Table
      * @var $tableName string. It represents the table name in DB.
      */
     private $tableName;
+
+    /**
+     * It sets the current table name
+     * @param string $tableName
+     */
+    public function setTableName($tableName)
+    {
+        $this->tableName = $tableName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTableName()
+    {
+        return $this->tableName;
+    }
 }
