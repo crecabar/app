@@ -34,7 +34,7 @@
  */
 
 
-namespace Model;
+namespace MEN\Lib\Model;
 
 abstract class Table
 {

@@ -31,7 +31,7 @@
 //Get the current configuration manager
 require(dirname(__FILE__)."/../config/ConfigManager.php");
 
-use \Config\ConfigManager;
+use MEN\Config\ConfigManager;
 
 // Get the current config manager
 $CM = ConfigManager::getInstance();

@@ -34,7 +34,7 @@
  */
 
 
-namespace Config;
+namespace MEN\Config;
 
 class Psr4AutoLoaderClass
 {
