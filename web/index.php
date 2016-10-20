@@ -45,6 +45,3 @@ var_dump($server);
 $application = new \MEN\Lib\Vendor\ASmall\ASmall();
 $application->load();
 
-//Load one controller and display its action
-//$home = new \MEN\App\Frontend\Modules\Home\Controllers\Home();
-//$home->actionHome();
