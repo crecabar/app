@@ -38,8 +38,13 @@ use MEN\Config\ConfigManager;
 // Get the current config manager
 $CM = ConfigManager::getInstance();
 
-var_dump($_REQUEST);
+$server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();
+var_dump($server);
+
+//Inject the current configuration to the application manager.
+$application = new \MEN\Lib\Vendor\ASmall\ASmall();
+$application->load();
 
 //Load one controller and display its action
-$home = new \MEN\App\Frontend\Modules\Home\Controllers\Home();
-$home->actionHome();
+//$home = new \MEN\App\Frontend\Modules\Home\Controllers\Home();
+//$home->actionHome();
