@@ -19,23 +19,21 @@
  */
 
 /**
- * @file   backend.php
+ * @file   Form.php
  * @author crecabarren
- * @date   14-10-2016
- * @time   11:13
+ * @date   21-10-2016
+ * @time   11:31
  */
-//Get the current configuration manager
-require(dirname(__FILE__) . "/../config/ConfigManager.php");
+/**
+ * Class Form
+ * @package MEN\Lib\Vendor\ASmall\ASmall
+ * @author crecabarren
+ */
 
-use MEN\Config\ConfigManager;
 
-// Get the current config manager
-$CM = ConfigManager::getInstance();
-var_dump($CM);
+namespace MEN\Lib\Vendor\ASmall\ASmall;
 
-$server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();
-var_dump($server);
+class Form
+{
 
-//Inject the current configuration to the application manager.
-$application = new \MEN\Lib\Vendor\ASmall\ASmall();
-$application->load();
+}

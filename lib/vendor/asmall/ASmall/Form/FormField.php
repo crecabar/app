@@ -19,23 +19,33 @@
  */
 
 /**
- * @file   backend.php
+ * @file   FormField.php
  * @author crecabarren
  * @date   14-10-2016
- * @time   11:13
+ * @time   11:12
  */
-//Get the current configuration manager
-require(dirname(__FILE__) . "/../config/ConfigManager.php");
+/**
+ * Class MEN\Lib\Vendor\ASmall\ASmall\Form;
+ * @package Model
+ * @author crecabarren
+ */
 
-use MEN\Config\ConfigManager;
 
-// Get the current config manager
-$CM = ConfigManager::getInstance();
-var_dump($CM);
+namespace MEN\Lib\Vendor\ASmall\ASmall\Form;
 
-$server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();
-var_dump($server);
+abstract class FormField
+{
+    /**
+     * @var string
+     */
+    protected $type;
+    /**
+     * @var string
+     */
+    protected $id;
 
-//Inject the current configuration to the application manager.
-$application = new \MEN\Lib\Vendor\ASmall\ASmall();
-$application->load();
+    /**
+     * @return string
+     */
+    public abstract function display();
+}

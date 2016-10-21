@@ -19,23 +19,22 @@
  */
 
 /**
- * @file   backend.php
+ * @file   ActionSendEmail.php
  * @author crecabarren
  * @date   14-10-2016
- * @time   11:13
+ * @time   12:53
  */
-//Get the current configuration manager
-require(dirname(__FILE__) . "/../config/ConfigManager.php");
+/**
+ * Class ActionSendEmail
+ * @package MEN\Lib\Model\Action
+ * @author crecabarren
+ */
 
-use MEN\Config\ConfigManager;
 
-// Get the current config manager
-$CM = ConfigManager::getInstance();
-var_dump($CM);
+namespace MEN\Lib\Model\Action;
 
-$server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();
-var_dump($server);
+use MEN\Lib\Model\Action;
 
-//Inject the current configuration to the application manager.
-$application = new \MEN\Lib\Vendor\ASmall\ASmall();
-$application->load();
+class ActionSendEmail extends Action
+{
+}

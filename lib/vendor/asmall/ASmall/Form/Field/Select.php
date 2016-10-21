@@ -19,23 +19,30 @@
  */
 
 /**
- * @file   backend.php
+ * @file   Select.php
  * @author crecabarren
- * @date   14-10-2016
- * @time   11:13
+ * @date   18-10-2016
+ * @time   8:51
  */
-//Get the current configuration manager
-require(dirname(__FILE__) . "/../config/ConfigManager.php");
+/**
+ * Class Select
+ * @package MEN\Lib\Vendor\ASmall\ASmall\Form\Field
+ * @author crecabarren
+ */
 
-use MEN\Config\ConfigManager;
 
-// Get the current config manager
-$CM = ConfigManager::getInstance();
-var_dump($CM);
+namespace MEN\Lib\Vendor\ASmall\ASmall\Form\Field;
 
-$server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();
-var_dump($server);
+use MEN\Lib\Vendor\ASmall\ASmall\Form\FormField;
 
-//Inject the current configuration to the application manager.
-$application = new \MEN\Lib\Vendor\ASmall\ASmall();
-$application->load();
+class Select extends FormField
+{
+    /**
+     * @return string
+     */
+    public function display()
+    {
+        // TODO: Implement display() method.
+    }
+
+}

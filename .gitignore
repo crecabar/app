@@ -48,3 +48,5 @@ crashlytics-build.properties
 fabric.properties
 
 config/config.ini
+config/db.ini
+app/frontend/config/route.ini
