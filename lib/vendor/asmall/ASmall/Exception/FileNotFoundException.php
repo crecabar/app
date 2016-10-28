@@ -19,19 +19,21 @@
  */
 
 /**
- * @file   RecoverableErrorException.php
+ * @file   FileNotFoundException.php
  * @author crecabarren
  * @date   28-10-2016
- * @time   13:12
+ * @time   16:30
  */
 /**
- * Class RecoverableErrorException
- * @package MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler
+ * Class FileNotFoundException
+ * @package MEN\lib\vendor\asmall\ASmall\Exception
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
+namespace MEN\lib\vendor\asmall\ASmall\Exception;
 
-class RecoverableErrorException extends \ErrorException
-{}
+class FileNotFoundException extends \Exception
+{
+
+}

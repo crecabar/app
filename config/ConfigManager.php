@@ -48,11 +48,7 @@ class ConfigManager
      */
     private function __construct()
     {
-        require_once 'Psr4AutoLoaderClass.php';
-        $this->loader = new Psr4AutoLoaderClass();
-        $this->loader->register();
         $this->parseIni();
-        $this->setNamespaces();
     }
 
     /**
@@ -65,17 +61,6 @@ class ConfigManager
         }
 
         return self::$instance;
-    }
-
-    /**
-     * TODO: try to parametrize this
-     * @return void
-     */
-    public function setNamespaces()
-    {
-        $this->loader->addNamespace('MEN', __DIR__ . '/tramites2.localhost');
-        $this->loader->addNamespace('MEN\Lib', __DIR__ . '/../lib');
-        $this->loader->addNamespace('MEN\App', __DIR__ . '/../app');
     }
 
     /**

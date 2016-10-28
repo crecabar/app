@@ -26,7 +26,7 @@
  */
 /**
  * Class CoreWarningException
- * @package MEN\lib\vendor\asmall\ASmall\Exception
+ * @package MEN\lib\vendor\asmall\ASmall\ErrorExceptionHandler
  * @author crecabarren
  */
 
@@ -34,6 +34,4 @@
 namespace MEN\lib\vendor\asmall\ASmall\Exception;
 
 class CoreWarningException extends \ErrorException
-{
-
-}
+{}

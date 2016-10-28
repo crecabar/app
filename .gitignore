@@ -50,3 +50,6 @@ fabric.properties
 config/config.ini
 config/db.ini
 app/frontend/config/route.ini
+log/*
+composer.lock
+vendor/*

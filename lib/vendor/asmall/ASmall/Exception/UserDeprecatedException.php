@@ -26,7 +26,7 @@
  */
 /**
  * Class UserDeprecatedException
- * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
+ * @package MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler
  * @author crecabarren
  */
 
@@ -34,6 +34,4 @@
 namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
 class UserDeprecatedException extends \ErrorException
-{
-
-}
+{}

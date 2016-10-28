@@ -27,14 +27,9 @@
  * @time   11:13
  */
 
-//Get the current configuration manager
-require(dirname(__FILE__) . "/../config/ConfigManager.php");
+require_once 'bootstrap.php';
 
-use MEN\Config\ConfigManager;
-
-// Get the current config manager
-$CM = ConfigManager::getInstance();
-//var_dump($CM);
+$CM = \MEN\Config\ConfigManager::getInstance();
 
 // Get the current Server
 $server = \MEN\Lib\Vendor\ASmall\ASmall\Server::getInstance();

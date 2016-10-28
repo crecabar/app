@@ -26,7 +26,7 @@
  */
 /**
  * Class CompileErrorException
- * @package MEN\lib\vendor\asmall\ASmall\Exception
+ * @package MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler
  * @author crecabarren
  */
 
@@ -34,6 +34,4 @@
 namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
 class CompileErrorException extends \ErrorException
-{
-
-}
+{}

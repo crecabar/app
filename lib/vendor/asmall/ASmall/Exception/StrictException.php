@@ -26,7 +26,7 @@
  */
 /**
  * Class StrictException
- * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
+ * @package MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler
  * @author crecabarren
  */
 
@@ -34,6 +34,4 @@
 namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
 class StrictException extends \ErrorException
-{
-
-}
+{}

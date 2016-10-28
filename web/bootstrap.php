@@ -19,19 +19,20 @@
  */
 
 /**
- * @file   RecoverableErrorException.php
+ * @file   bootstrap.php
  * @author crecabarren
  * @date   28-10-2016
- * @time   13:12
- */
-/**
- * Class RecoverableErrorException
- * @package MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler
- * @author crecabarren
+ * @time   15:20
  */
 
+//Get the current autoloader and sets the base namespaces.
+require_once dirname(__FILE__) . "/../config/Psr4AutoLoaderClass.php";
+$loader = new \MEN\Config\Psr4AutoLoaderClass();
+$loader->register();
+$loader->addNamespace('MEN', __DIR__ . '/');
+$loader->addNamespace('MEN\App', __DIR__ . '/../app');
+$loader->addNamespace('MEN\Config', __DIR__ . '/../config');
+$loader->addNamespace('MEN\Lib', __DIR__ . '/../lib');
 
-namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
+$exceptionHandler = new \MEN\Lib\Vendor\ASmall\ASmall\ErrorExceptionHandler();
 
-class RecoverableErrorException extends \ErrorException
-{}

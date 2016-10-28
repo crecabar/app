@@ -26,7 +26,7 @@
  */
 /**
  * Class ParseException
- * @package MEN\lib\vendor\asmall\ASmall\Exception
+ * @package MEN\lib\vendor\asmall\ASmall\ErrorExceptionHandler
  * @author crecabarren
  */
 
@@ -34,6 +34,4 @@
 namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
 class ParseException extends \ErrorException
-{
-
-}
+{}

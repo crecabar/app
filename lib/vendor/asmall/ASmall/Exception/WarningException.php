@@ -34,6 +34,4 @@
 namespace MEN\lib\vendor\asmall\ASmall\Exception;
 
 class WarningException extends \ErrorException
-{
-
-}
+{}
