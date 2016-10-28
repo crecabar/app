@@ -19,36 +19,21 @@
  */
 
 /**
- * @file   Request.php
+ * @file   UserDeprecatedException.php
  * @author crecabarren
- * @date   20-10-2016
- * @time   8:28
+ * @date   28-10-2016
+ * @time   13:13
  */
 /**
- * Class Request
- * @package MEN\lib\vendor\asmall\ASmall
+ * Class UserDeprecatedException
+ * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Vendor\ASmall\ASmall;
+namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
-class Request
+class UserDeprecatedException extends \ErrorException
 {
-    private $params = array(); //TODO: Change it to = [] as soon as get PHP 5.6
 
-    /**
-     * Request constructor.
-     * @param string $request
-     */
-    public function __construct($request = '')
-    {
-        if ($request != '') {
-            $requestArray = explode("&", $request);
-            foreach ($requestArray as $requestItem) {
-                $requestItem = explode("=", $requestItem);
-                $this->params[$requestItem[0]] = $requestItem[1];
-            }
-        }
-    }
 }

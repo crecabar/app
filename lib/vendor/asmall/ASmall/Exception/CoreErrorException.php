@@ -19,23 +19,21 @@
  */
 
 /**
- * @file   ActionWebService.php
+ * @file   CoreErrorException.php
  * @author crecabarren
- * @date   14-10-2016
- * @time   13:00
+ * @date   28-10-2016
+ * @time   13:06
  */
 /**
- * Class ActionWebService
- * @package MEN\Lib\Model\Action
+ * Class CoreErrorException
+ * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Model\Action;
+namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
-use MEN\Lib\Model\Action;
-
-class ActionWebService extends Action
+class CoreErrorException extends \ErrorException
 {
 
 }

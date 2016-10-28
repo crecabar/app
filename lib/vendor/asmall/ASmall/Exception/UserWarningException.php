@@ -19,36 +19,21 @@
  */
 
 /**
- * @file   Request.php
+ * @file   UserWarningException.php
  * @author crecabarren
- * @date   20-10-2016
- * @time   8:28
+ * @date   28-10-2016
+ * @time   13:10
  */
 /**
- * Class Request
- * @package MEN\lib\vendor\asmall\ASmall
+ * Class UserWarningException
+ * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Vendor\ASmall\ASmall;
+namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
-class Request
+class UserWarningException extends \ErrorException
 {
-    private $params = array(); //TODO: Change it to = [] as soon as get PHP 5.6
 
-    /**
-     * Request constructor.
-     * @param string $request
-     */
-    public function __construct($request = '')
-    {
-        if ($request != '') {
-            $requestArray = explode("&", $request);
-            foreach ($requestArray as $requestItem) {
-                $requestItem = explode("=", $requestItem);
-                $this->params[$requestItem[0]] = $requestItem[1];
-            }
-        }
-    }
 }

@@ -19,22 +19,23 @@
  */
 
 /**
- * @file   ActionSendEmail.php
+ * @file   ActionWebService.php
  * @author crecabarren
  * @date   14-10-2016
- * @time   12:53
+ * @time   13:00
  */
 /**
- * Class ActionSendEmail
- * @package MEN\Lib\Model\Action
+ * Class ActionWebService
+ * @package MEN\Lib\Model\Classes\Action
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Model\Action;
+namespace MEN\Lib\Model\Classes\Action;
 
-use MEN\Lib\Model\Action;
+use MEN\Lib\Model\Classes\Action;
 
-class ActionSendEmail extends Action
+class ActionWebService extends Action
 {
+
 }

@@ -54,7 +54,10 @@ class Core
     {
         $this->server = Server::getInstance();
         $this->configurationManager = ConfigManager::getInstance();
-        $request = new Request($this->server->QueryString);
+        $request = new Request(
+            strlen($this->server->QueryString) > 0 ? $this->server->QueryString : 'app=frontend&module=home&action=home'
+        );
+        var_dump($request);
     }
 
     /**

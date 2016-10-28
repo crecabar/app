@@ -19,41 +19,21 @@
  */
 
 /**
- * @file   Table.php
+ * @file   RecoverableErrorException.php
  * @author crecabarren
- * @date   14-10-2016
- * @time   12:54
+ * @date   28-10-2016
+ * @time   13:12
  */
 /**
- * Class Table
- * @package MEN\Lib\Model
+ * Class RecoverableErrorException
+ * @package MEN\Lib\Vendor\ASmall\ASmall\Exception
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Model;
+namespace MEN\Lib\Vendor\ASmall\ASmall\Exception;
 
-abstract class Table
+class RecoverableErrorException extends \ErrorException
 {
-    /**
-     * @var $tableName string. It represents the table name in DB.
-     */
-    private $tableName;
 
-    /**
-     * It sets the current table name
-     * @param string $tableName
-     */
-    public function setTableName($tableName)
-    {
-        $this->tableName = $tableName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTableName()
-    {
-        return $this->tableName;
-    }
 }

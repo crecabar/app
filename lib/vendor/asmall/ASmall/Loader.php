@@ -19,20 +19,21 @@
  */
 
 /**
- * @file   Action.php
+ * @file   Loader.php
  * @author crecabarren
- * @date   14-10-2016
- * @time   11:09
+ * @date   21-10-2016
+ * @time   15:24
  */
 /**
- * Class Action
- * @package  MEN\Lib\Model
+ * Class Loader
+ * @package MEN\lib\vendor\asmall\ASmall
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Model;
+namespace MEN\Lib\Vendor\ASmall\ASmall;
 
-class Action
+class Loader
 {
+
 }

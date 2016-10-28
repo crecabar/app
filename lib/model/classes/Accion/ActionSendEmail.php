@@ -19,36 +19,22 @@
  */
 
 /**
- * @file   Request.php
+ * @file   ActionSendEmail.php
  * @author crecabarren
- * @date   20-10-2016
- * @time   8:28
+ * @date   14-10-2016
+ * @time   12:53
  */
 /**
- * Class Request
- * @package MEN\lib\vendor\asmall\ASmall
+ * Class ActionSendEmail
+ * @package MEN\Lib\Model\Classes\Action
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Vendor\ASmall\ASmall;
+namespace MEN\Lib\Model\Classes\Action;
 
-class Request
+use MEN\Lib\Model\Classes\Action;
+
+class ActionSendEmail extends Action
 {
-    private $params = array(); //TODO: Change it to = [] as soon as get PHP 5.6
-
-    /**
-     * Request constructor.
-     * @param string $request
-     */
-    public function __construct($request = '')
-    {
-        if ($request != '') {
-            $requestArray = explode("&", $request);
-            foreach ($requestArray as $requestItem) {
-                $requestItem = explode("=", $requestItem);
-                $this->params[$requestItem[0]] = $requestItem[1];
-            }
-        }
-    }
 }

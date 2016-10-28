@@ -19,23 +19,20 @@
  */
 
 /**
- * @file   ActionVariable.php
+ * @file   Action.php
  * @author crecabarren
  * @date   14-10-2016
- * @time   12:58
+ * @time   11:09
  */
 /**
- * Class ActionVariable
- * @package MEN\Lib\Model\Action
+ * Class Action
+ * @package  MEN\Lib\Model\Classes
  * @author crecabarren
  */
 
 
-namespace MEN\Lib\Model\Action;
+namespace MEN\Lib\Model\Classes;
 
-use MEN\Lib\Model\Action;
-
-class ActionVariable extends Action
+class Action
 {
-
 }
